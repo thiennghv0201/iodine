@@ -30,7 +30,7 @@ Compile Time Settings
 #endif
 
 #ifndef HTTP_DEFAULT_BODY_LIMIT
-#define HTTP_DEFAULT_BODY_LIMIT (1024 * 1024 * 50)
+#define HTTP_DEFAULT_BODY_LIMIT (1024 * 1024 * 100)
 #endif
 
 #ifndef HTTP_MAX_HEADER_COUNT
@@ -39,7 +39,7 @@ Compile Time Settings
 
 #ifndef HTTP_MAX_HEADER_LENGTH
 /** the default maximum length for a single header line */
-#define HTTP_MAX_HEADER_LENGTH 8192
+#define HTTP_MAX_HEADER_LENGTH (1024 * 32)
 #endif
 
 #ifndef FIO_HTTP_EXACT_LOGGING
